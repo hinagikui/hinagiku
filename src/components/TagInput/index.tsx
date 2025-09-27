@@ -55,7 +55,7 @@ export const TagInput = ({
   };
 
   return (
-    <label className={`input ${className}`}>
+    <div className={`input ${className}`}>
       {
         value.map(
           (tag, index) =>
@@ -86,6 +86,6 @@ export const TagInput = ({
         onKeyDown={onKeyDown}
       />
       <span className="text-xs text-neutral-500">{value.length}/{max}</span>
-    </label>
+    </div>
   );
 };
