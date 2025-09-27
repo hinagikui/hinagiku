@@ -18,15 +18,13 @@
 
 ## 🚀 Quick Start
 
+in your app
 ```bash
 # Install dependencies
 npm install
-
-# Start development server
-npm run dev
-
-# View components in Storybook
-npm run storybook
+```
+```App.tsx
+import 'hinagiku/style.css'; // add this line
 ```
 
 ## 📦 Available Components
@@ -35,21 +33,6 @@ npm run storybook
 - **Modal** - Accessible modal dialogs with custom hooks
 - More components coming soon...
 
-## 🛠️ Development
-
-```bash
-# Development
-npm run dev              # Start development server
-npm run storybook        # Launch Storybook
-
-# Building
-npm run build            # Build for production
-npm run build-storybook  # Build Storybook
-
-# Testing & Quality
-npm run lint             # Run ESLint
-npm test                 # Run tests
-```
 
 ## 📖 Documentation
 
@@ -60,10 +43,6 @@ Visit our [Storybook](https://storybook.hinagikui.site/) to explore components a
 Hinagiku uses a powerful combination of:
 - **Tailwind CSS** - Utility-first CSS framework
 - **DaisyUI** - Semantic component classes
-
-## 🧪 Testing
-
-We use Vitest for fast and reliable testing with browser testing capabilities via Playwright.
 
 ## 🤝 Contributing
 
