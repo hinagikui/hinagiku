@@ -5,6 +5,8 @@ type Props = {
   style?: 'default' | 'outline' | 'dash' | 'soft' | 'ghost' | 'link',
   active?: boolean,
   disabled?: boolean,
+  size?: 'default' | 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl',
+  modifier?: 'default' | 'wide' | 'block' | 'square' | 'circle',
   loading?: boolean,
   children?: JSX.Element | string,
   onClick?: ReactEventHandler<HTMLButtonElement>,
@@ -31,11 +33,31 @@ const styleClassMap = {
   'link': 'btn-link',
 };
 
+const sizeClassMap = {
+  'default': undefined,
+  'xxs': 'size-[15px]',
+  'xs': 'btn-xs',
+  'sm': 'btn-sm',
+  'md': 'btn-md',
+  'lg': 'btn-lg',
+  'xl': 'btn-xl',
+};
+
+const modifierClassMap = {
+  'default': undefined,
+  'wide': 'btn-wide',
+  'block': 'btn-block',
+  'square': 'btn-square',
+  'circle': 'btn-circle',
+};
+
 const Button = ({
   color = 'default',
   style = 'default',
   active = false,
   disabled = false,
+  size = 'default',
+  modifier = 'default',
   loading = false,
   children,
   onClick,
@@ -45,12 +67,16 @@ const Button = ({
   const styleClass = style ? styleClassMap[style] : undefined;
   const activeClass = active ? 'btn-active' : undefined;
   const disabledClass = disabled ? 'btn-disabled' : undefined;
+  const sizeClass = size ? sizeClassMap[size] : undefined;
+  const modifierClass = modifier ? modifierClassMap[modifier] : undefined;
   const classes = {
     baseClass,
     colorClass,
     styleClass,
     activeClass,
     disabledClass,
+    sizeClass,
+    modifierClass,
   };
   const convertedClasses = Object.values(classes).join(' ').trim();
   
