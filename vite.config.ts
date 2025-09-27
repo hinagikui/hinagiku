@@ -18,7 +18,8 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'index',
       fileName: 'index'
-    }
+    },
+    sourcemap: true,
   },
   plugins: [tailwindcss(), react(), dts({
     tsconfigPath: resolve(__dirname, 'tsconfig.app.json')
