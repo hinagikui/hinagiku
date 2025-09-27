@@ -3,5 +3,7 @@
   "compatibility_date": "2025-09-27",
   "assets": {
     "directory": "./storybook-static/"
-  }
+  },
+  "preview_urls": true,
+  "workers_dev": false
 }
