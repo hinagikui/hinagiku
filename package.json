@@ -9,10 +9,9 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
+      "import": ["./dist/index.js", "./dist/index.css"],
       "require": "./dist/index.umd.cjs"
-    },
-    "./style.css": "./dist/index.css"
+    }
   },
   "license": "MIT",
   "scripts": {

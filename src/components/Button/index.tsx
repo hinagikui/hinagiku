@@ -78,7 +78,10 @@ export const Button = ({
     sizeClass,
     modifierClass,
   };
-  const convertedClasses = Object.values(classes).join(' ').trim();
+  const convertedClasses = Object.values(classes)
+    .filter((className) => !!className)
+    .join(' ')
+    .trim();
   
   return (
     <button
