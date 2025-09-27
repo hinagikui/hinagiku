@@ -21,7 +21,7 @@
 in your app
 ```bash
 # Install dependencies
-npm install
+npm i hinagiku
 ```
 ```App.tsx
 import 'hinagiku/style.css'; // add this line
