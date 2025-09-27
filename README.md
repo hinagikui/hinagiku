@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+# 🌸 Hinagiku
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A beautiful and modern React component library built with TypeScript, Tailwind CSS, and DaisyUI
 
-Currently, two official plugins are available:
+[![Version](https://img.shields.io/npm/v/hinagiku?style=flat-square)](https://www.npmjs.com/package/hinagiku)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/username/hinagiku/ci.yml?style=flat-square)](https://github.com/username/hinagiku/actions)
+[![License](https://img.shields.io/github/license/username/hinagiku?style=flat-square)](LICENSE)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- 🚀 **Fast Development** - Built with Vite for lightning-fast HMR
+- 🎨 **Beautiful Design** - Styled with Tailwind CSS and DaisyUI
+- 📚 **Storybook Integration** - Interactive component documentation
+- 🧪 **Thoroughly Tested** - Comprehensive test suite with Vitest
+- ♿ **Accessible** - Built with accessibility in mind
+- 📱 **Responsive** - Mobile-first design approach
+- 🔧 **TypeScript** - Full type safety out of the box
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Quick Start
 
-## Expanding the ESLint configuration
+```bash
+# Install dependencies
+npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Start development server
+npm run dev
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# View components in Storybook
+npm run storybook
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Available Components
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Button** - Versatile button component with multiple variants
+- **Modal** - Accessible modal dialogs with custom hooks
+- More components coming soon...
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Development
+
+```bash
+# Development
+npm run dev              # Start development server
+npm run storybook        # Launch Storybook
+
+# Building
+npm run build            # Build for production
+npm run build-storybook  # Build Storybook
+
+# Testing & Quality
+npm run lint             # Run ESLint
+npm test                 # Run tests
 ```
+
+## 📖 Documentation
+
+Visit our [Storybook](https://your-storybook-url.com) to explore components and their usage examples.
+
+## 🎨 Styling
+
+Hinagiku uses a powerful combination of:
+- **Tailwind CSS** - Utility-first CSS framework
+- **DaisyUI** - Semantic component classes
+
+## 🧪 Testing
+
+We use Vitest for fast and reliable testing with browser testing capabilities via Playwright.
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+---
+
+Made with ❤️ by the Hinagiku team
