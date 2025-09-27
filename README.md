@@ -53,7 +53,7 @@ npm test                 # Run tests
 
 ## 📖 Documentation
 
-Visit our [Storybook](https://your-storybook-url.com) to explore components and their usage examples.
+Visit our [Storybook](https://storybook.hinagikui.site/) to explore components and their usage examples.
 
 ## 🎨 Styling
 
