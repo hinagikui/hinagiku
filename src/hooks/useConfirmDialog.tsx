@@ -7,7 +7,7 @@ type ConfirmDialogArgs = {
   okLabel?: string,
   cancelLabel?: string,
 };
-export default function useConfirmDialog({
+export function useConfirmDialog({
   title,
   content,
   okLabel = 'OK',

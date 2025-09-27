@@ -2,7 +2,7 @@ import type { ArgTypes, Meta, StoryObj } from '@storybook/react';
 import { Modal } from '.';
 import { Button } from '../Button';
 import { useState } from 'react';
-import useConfirmDialog from '../../hooks/useConfirmDialog';
+import { useConfirmDialog } from '../../hooks/useConfirmDialog';
 
 const meta: Meta<typeof Modal> = {
   title: 'components/Modal',

@@ -4,7 +4,7 @@ type ConfirmDialogArgs = {
     okLabel?: string;
     cancelLabel?: string;
 };
-export default function useConfirmDialog({ title, content, okLabel, cancelLabel, }: ConfirmDialogArgs): {
+export declare function useConfirmDialog({ title, content, okLabel, cancelLabel, }: ConfirmDialogArgs): {
     showConfirm: () => Promise<unknown>;
     ConfirmDialog: () => import("react/jsx-runtime").JSX.Element;
 };
