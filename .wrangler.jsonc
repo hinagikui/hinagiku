@@ -1,0 +1,6 @@
+{
+  "name": "hinagiku-storybook",
+  "assets": {
+    "directory": "./storybook-static/"
+  }
+}
