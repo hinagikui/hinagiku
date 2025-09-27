@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import Modal from '../components/Modal';
+import { Modal } from '../components/Modal';
 
 type ConfirmDialogArgs = {
   title: string,

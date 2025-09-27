@@ -1,5 +1,5 @@
 import { useState, type KeyboardEvent } from 'react';
-import Button from '../Button';
+import { Button } from '../Button';
 
 type Props = {
   value: string[],
@@ -10,7 +10,7 @@ type Props = {
   removable?: boolean,
 };
 
-const TagInput = ({
+export const TagInput = ({
   value = [],
   max = 5,
   updateValue,
@@ -89,5 +89,3 @@ const TagInput = ({
     </label>
   );
 };
-
-export default TagInput;

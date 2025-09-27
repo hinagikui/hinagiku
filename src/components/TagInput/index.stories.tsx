@@ -1,5 +1,5 @@
 import type { ArgTypes, Meta, StoryObj } from '@storybook/react';
-import TagInput from '.';
+import { TagInput } from '.';
 import { useState } from 'react';
 
 const meta: Meta<typeof TagInput> = {

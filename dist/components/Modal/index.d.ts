@@ -5,5 +5,5 @@ type ModalProps = {
     children?: JSX.Element;
     onClose?: ReactEventHandler<HTMLDialogElement>;
 };
-declare const Modal: ({ active, disableEsc, children, onClose, }: ModalProps) => import("react/jsx-runtime").JSX.Element;
-export default Modal;
+export declare const Modal: ({ active, disableEsc, children, onClose, }: ModalProps) => import("react/jsx-runtime").JSX.Element;
+export {};

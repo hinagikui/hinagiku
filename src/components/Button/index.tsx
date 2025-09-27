@@ -51,7 +51,7 @@ const modifierClassMap = {
   'circle': 'btn-circle',
 };
 
-const Button = ({
+export const Button = ({
   color = 'default',
   style = 'default',
   active = false,
@@ -91,5 +91,3 @@ const Button = ({
     </button>
   );
 };
-
-export default Button;

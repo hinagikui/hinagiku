@@ -7,7 +7,7 @@ type ModalProps = {
   onClose?: ReactEventHandler<HTMLDialogElement>,
 };
 
-const Modal = ({
+export const Modal = ({
   active = false,
   disableEsc = false,
   children,
@@ -51,5 +51,3 @@ const Modal = ({
     </dialog>
   );
 };
-
-export default Modal;

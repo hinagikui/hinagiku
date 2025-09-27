@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { default as Modal } from '.';
+import { Modal } from '.';
 declare const meta: Meta<typeof Modal>;
 export default meta;
 type Story = StoryObj<typeof meta>;

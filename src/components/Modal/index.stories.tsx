@@ -1,6 +1,6 @@
 import type { ArgTypes, Meta, StoryObj } from '@storybook/react';
-import Modal from '.';
-import Button from '../Button';
+import { Modal } from '.';
+import { Button } from '../Button';
 import { useState } from 'react';
 import useConfirmDialog from '../../hooks/useConfirmDialog';
 

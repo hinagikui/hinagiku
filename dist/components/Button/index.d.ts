@@ -10,5 +10,5 @@ type Props = {
     children?: JSX.Element | string;
     onClick?: ReactEventHandler<HTMLButtonElement>;
 };
-declare const Button: ({ color, style, active, disabled, size, modifier, loading, children, onClick, }: Props) => import("react/jsx-runtime").JSX.Element;
-export default Button;
+export declare const Button: ({ color, style, active, disabled, size, modifier, loading, children, onClick, }: Props) => import("react/jsx-runtime").JSX.Element;
+export {};
