@@ -9,3 +9,5 @@ vitest.shims.d.ts
 wrangler.jsonc
 eslint.config.js
 README.md
+.editorconfig
+.claude

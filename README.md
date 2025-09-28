@@ -3,9 +3,6 @@
 > A beautiful and modern React component library built with TypeScript, Tailwind CSS, and DaisyUI
 
 [![Version](https://img.shields.io/npm/v/hinagiku?style=flat-square)](https://www.npmjs.com/package/hinagiku)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/username/hinagiku/ci.yml?style=flat-square)](https://github.com/username/hinagiku/actions)
-[![License](https://img.shields.io/github/license/username/hinagiku?style=flat-square)](LICENSE)
-
 ## ✨ Features
 
 - 🚀 **Fast Development** - Built with Vite for lightning-fast HMR
