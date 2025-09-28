@@ -10,7 +10,7 @@ type Props = {
   removable?: boolean,
 };
 
-export const TagInput = ({
+export const InputTag = ({
   value = [],
   max = 5,
   updateValue,

@@ -1,10 +1,10 @@
 import type { ArgTypes, Meta, StoryObj } from '@storybook/react';
-import { TagInput } from '.';
+import { InputTag } from '.';
 import { useState } from 'react';
 
-const meta: Meta<typeof TagInput> = {
+const meta: Meta<typeof InputTag> = {
   title: 'components/InputTag',
-  component: TagInput,
+  component: InputTag,
   argTypes: {
     value: {
       control: false,
@@ -18,11 +18,11 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const Preview = (args: ArgTypes<typeof TagInput>) => {
+const Preview = (args: ArgTypes<typeof InputTag>) => {
   const [tags, setTags] = useState(['tag1', 'tag2']);
 
   return (
-    <TagInput value={tags} updateValue={setTags} {...args} />
+    <InputTag value={tags} updateValue={setTags} {...args} />
   );
 };
 

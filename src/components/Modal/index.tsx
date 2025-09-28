@@ -1,6 +1,6 @@
 import { useEffect, useRef, type JSX, type ReactEventHandler } from 'react';
 
-type ModalProps = {
+type Props = {
   active?: boolean,
   disableEsc?: boolean,
   children?: JSX.Element,
@@ -12,7 +12,7 @@ export const Modal = ({
   disableEsc = false,
   children,
   onClose,
-}: ModalProps) => {
+}: Props) => {
   const ref = useRef<HTMLDialogElement>(null);
 
   const onKeydown = (ev: KeyboardEvent) => {
