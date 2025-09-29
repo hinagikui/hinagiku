@@ -23,6 +23,9 @@ npm i hinagiku
 ```App.tsx
 import 'hinagiku/style.css'; // add this line
 ```
+```tsx
+import { /** Component */ } from 'hinagiku';
+```
 
 ## 📦 Available Components
 
